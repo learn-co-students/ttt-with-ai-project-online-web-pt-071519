@@ -43,7 +43,16 @@ class Game
      @winner = @board.cells[winning_combo.first]
     end
  end
+ def turn 
+    input = current_player.move(board)
+    if @board.valid_move?(input)
+      @board.update(input, current_player)
+    else
+      turn
+    end
+    
 
-
+ end
+ 
 
 end
