@@ -22,6 +22,8 @@ class Board
         cells[input.to_i-1]
     end
 
+
+    
     def full?
         #cells.each do |character|
             #if character == "X" || character == "O"
